@@ -104,7 +104,7 @@ npm install
 #### Backend Environment Variables
 Create/Update `.env` file in the `server` directory:
 ```env
-MONGO_URI=mongodb+srv://nayakraveesh0320_db_user:x8qxllriwcrc6e99@restaurant-inventory.pm5d1ny.mongodb.net/
+MONGO_URI=
 PORT=5000
 NODE_ENV=development
 ```
