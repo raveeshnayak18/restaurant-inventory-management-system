@@ -1,0 +1,198 @@
+.inventory-item {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-item.available {
+  border-left: 5px solid #28a745;
+  background: #f8f9fa;
+}
+
+.inventory-item.low-stock {
+  border-left: 5px solid #ffc107;
+  background: #fffbf0;
+}
+
+.inventory-item.out-of-stock {
+  border-left: 5px solid #dc3545;
+  background: #fff5f5;
+  opacity: 0.8;
+}
+
+.inventory-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.item-header h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.status-badge.available {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.low-stock {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.out-of-stock {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.item-details {
+  margin-bottom: 15px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row .label {
+  font-weight: 600;
+  color: #666;
+  min-width: 120px;
+}
+
+.detail-row .value {
+  color: #333;
+  font-weight: 500;
+  text-align: right;
+}
+
+.detail-row .value.warning {
+  color: #ffc107;
+  font-weight: 700;
+}
+
+.warning-box {
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-top: 12px;
+  border-left: 4px solid #ffc107;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.error-box {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-top: 12px;
+  border-left: 4px solid #dc3545;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.item-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 80px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.btn-use {
+  background: #28a745;
+  color: white;
+}
+
+.btn-use:hover:not(:disabled) {
+  background: #218838;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn-use:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-reorder {
+  background: #28a745;
+  color: white;
+}
+
+.btn-reorder:hover {
+  background: #218838;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+@media (max-width: 480px) {
+  .inventory-item {
+    padding: 15px;
+  }
+
+  .item-header {
+    flex-direction: column;
+  }
+
+  .status-badge {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .item-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

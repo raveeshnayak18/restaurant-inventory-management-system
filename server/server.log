@@ -1,0 +1,31 @@
+
+> server@1.0.0 start
+> node server.js
+
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+MongoDB Connected: ac-zppenbe-shard-00-01.pm5d1ny.mongodb.net
+Server running on http://localhost:5000
+Fetching inventory items...
+MongoDB connection state: 1
+Database name: restaurant_inventory
+Found 9 items
+Fetching inventory items...
+MongoDB connection state: 1
+Database name: restaurant_inventory
+Found 9 items
+Fetching inventory items...
+MongoDB connection state: 1
+Database name: restaurant_inventory
+Found 9 items
+Fetching inventory items...
+MongoDB connection state: 1
+Database name: restaurant_inventory
+Found 9 items
+Fetching inventory items...
+MongoDB connection state: 1
+Database name: restaurant_inventory
+Found 9 items
+Fetching inventory items...
+MongoDB connection state: 1
+Database name: restaurant_inventory
+Found 9 items
