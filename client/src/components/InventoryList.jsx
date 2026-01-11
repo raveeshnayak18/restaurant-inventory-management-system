@@ -124,7 +124,7 @@ const InventoryList = () => {
       <div className="header-section">
         <h1>🍽️ Restaurant Inventory Management</h1>
         <button
-          className="btn btn-primary btn-small"
+          className="btn btn-primary "
           onClick={() => setShowAddForm(true)}
         >
           + Add New Item
