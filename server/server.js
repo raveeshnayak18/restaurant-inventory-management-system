@@ -49,6 +49,13 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Restaurant Inventory Backend API is running"
+  });
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({
@@ -56,6 +63,7 @@ app.use((req, res) => {
     message: 'Route not found',
   });
 });
+
 
 // Start server
 const startServer = async () => {
